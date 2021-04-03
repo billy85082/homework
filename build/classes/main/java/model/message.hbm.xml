@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="main.java.model.message" table="MESSAGE">
+		<id name="num" type="java.lang.Integer">
+			<column name="ID" />
+			<generator class="native" />
+		</id>
+		<property name="title" type="java.lang.String">
+			<column name="TITLE" />
+		</property>	
+		<property name="message" type="java.lang.String">
+			<column name="MESSAGE" />
+		</property>
+		<property name="author" type="java.lang.String">
+			<column name="AUTHOR" />
+		</property>
+		<property name="Start_date" type="java.sql.Date">
+			<column name="START_DATE" />
+		</property>
+		<property name="End_date" type="java.sql.Date">
+			<column name="END_DATE" />
+		</property>
+	</class>
+
+</hibernate-mapping>

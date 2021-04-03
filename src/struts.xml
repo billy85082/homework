@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+
+    <package name="user" extends="struts-default">
+        <action name="Welcome" class="main.java.action.messageAction" method="welcome">
+            <result name="SUCCESS">welcome.jsp</result>
+        </action>
+        <action name="showMessage" class="main.java.action.messageAction" method="showMessage">
+            <result name="SUCCESS">showMessage.jsp</result>
+        </action>
+        <action name="creat" class="main.java.action.messageAction" method="creat">
+            <result name="SUCCESS">creat.jsp</result>
+        </action>
+        <action name="add" class="main.java.action.messageAction" method="add">
+            <result name="SUCCESS">index.jsp</result>
+        </action>
+        <action name="delete" class="main.java.action.messageAction" method="delete">
+            <result name="SUCCESS">index.jsp</result>
+        </action>
+        <action name="updata_show" class="main.java.action.messageAction" method="updata_show">
+            <result name="SUCCESS">updata.jsp</result>
+        </action>
+        <action name="updata" class="main.java.action.messageAction" method="updata">
+            <result name="SUCCESS">index.jsp</result>
+        </action>
+        
+    </package>
+</struts>
