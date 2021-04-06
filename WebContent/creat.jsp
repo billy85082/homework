@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-<form action="add.action" method="post">
+<form action="add" method="post">
 	<table class="table table-hover table-dark">
 	  <thead>
 	    <tr>
@@ -41,7 +41,8 @@
 	    </tr>
 	  </thead>
 	</table>
-	<input type="file" class="form-control" id="customFile" />
+	<!-- class="form-control" --> 
+	
 	<textarea name="message.message" contenteditable="true" id="TextArea1" cols="20" rows="2" class="ckeditor"></textarea>
 	
 	<div style="margin: 9px 0 0 9px;float:left; display:inline;">  	    	  

@@ -25,11 +25,7 @@
     	<property name="hbm2ddl.auto">update</property>
     	
     	<mapping resource="main/java/model/message.hbm.xml"/>
-    	<!-- 
-    	<mapping resource="tw/hibernate/hellow/News.hbm.xml"/>
     	
-    	<mapping class="main.java.model.message"/>
-    	 -->
     
     </session-factory>
     

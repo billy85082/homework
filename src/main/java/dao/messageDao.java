@@ -10,7 +10,7 @@ public class messageDao {
     HibernateUtil hibernateUtil = new HibernateUtil();
 
     public List<message> getall(int now,int showpage,int allcount) {
-        return hibernateUtil.getAllUsers(message.class,now,showpage,allcount);
+        return hibernateUtil.getAllMessages(message.class,now,showpage,allcount);
     }
 
     public message getallbyid(int id) {
@@ -22,7 +22,7 @@ public class messageDao {
     }
 
     public void delete(int id) {
-        hibernateUtil.deleteUser(id,message.class);
+        hibernateUtil.deleteMessage(id,message.class);
     }
 
     public <T> void creat(final T entity) {    	

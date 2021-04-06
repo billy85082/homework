@@ -4,6 +4,8 @@ package main.java.model;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
+
+import java.io.File;
 import java.util.Date;
 
 
@@ -26,7 +28,19 @@ public class message {
     @Column
     @Type(type="java.sql.Date")
     private Date End_date;
+    
+    
+    
+    
 
+    
+    
+    
+    
+   
+    
+    
+    
 
     public Integer getNum() {return num;}
 

@@ -4,6 +4,9 @@ import com.opensymphony.xwork2.ActionSupport;
 import main.java.dao.messageDao;
 import main.java.model.message;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.util.Collections;
 import java.util.List;
 
@@ -17,7 +20,10 @@ public class messageAction extends ActionSupport {
     private int showpage = 10;
     private int allcount = 0;
     
-
+       
+   
+    
+    
 
     public String welcome() throws Exception{
         allcount = messageDao.allcount();
@@ -63,11 +69,16 @@ public class messageAction extends ActionSupport {
 
 
 //set and get
-    public main.java.model.message getMessage() {
+    
+   	
+	
+	
+	
+	public main.java.model.message getMessage() {
         return message;
-    }
+    }    
 
-    public void setMessage(main.java.model.message message) {
+	public void setMessage(main.java.model.message message) {
         this.message = message;
     }
 

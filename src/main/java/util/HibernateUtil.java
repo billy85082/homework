@@ -79,7 +79,7 @@ public class HibernateUtil {
          * @param <T>
          * @return
          */
-    public <T> List<T> getAllUsers(Class<T> entityclass,int now,int showpage,int Allcount) {
+    public <T> List<T> getAllMessages(Class<T> entityclass,int now,int showpage,int Allcount) {
         List<T> entity = new ArrayList<T>();
         Session session = sessionFactory.openSession();
         int a = Allcount-showpage-(now-1)*showpage;
@@ -159,7 +159,7 @@ public class HibernateUtil {
          * @param entityclass
          * @param <T>
          */
-    public <T> void deleteUser(int id,Class<T> entityclass) {
+    public <T> void deleteMessage(int id,Class<T> entityclass) {
         Transaction trns = null;
         Session session = sessionFactory.openSession();        
         try {

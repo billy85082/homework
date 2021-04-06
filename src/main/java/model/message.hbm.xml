@@ -25,6 +25,8 @@
 		<property name="End_date" type="java.sql.Date">
 			<column name="END_DATE" />
 		</property>
+		
+		
 	</class>
 
 </hibernate-mapping>

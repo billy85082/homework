@@ -7,6 +7,8 @@
 
 
     <package name="user" extends="struts-default">
+    
+    	    
         <action name="Welcome" class="main.java.action.messageAction" method="welcome">
             <result name="SUCCESS">welcome.jsp</result>
         </action>
